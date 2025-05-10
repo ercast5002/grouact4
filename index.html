@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MecarColombiano</title>
+    <link rel="stylesheet" href="stilos.css">
+    <script src="https://kit.fontawesome.com/29d0d31443.js" crossorigin="anonymous"></script>
+    
+    <title>Fecha y Hora del PC</title>
+  <script>
+    function mostrarFechaHora() {
+      var fechaHora = new Date();
+      var fecha = fechaHora.toLocaleDateString();
+      var hora = fechaHora.toLocaleTimeString();
+      
+      document.getElementById('fecha-hora').innerHTML = 'Fecha: ' + fecha + '<br>Hora: ' + hora;
+    }
+
+    // Llama a la función para mostrar la fecha y hora al cargar la página
+    window.onload = function() {
+      mostrarFechaHora();
+    };
+  </script>
+  <script src="script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- en este div se muestra en login y la hora -->
+  <div class="menu1-container">
+    <div class="menu1">
+      <div class="date"><div id="fecha-hora"></div></div>
+      <div class="links">
+        <a href="registro.html" class="signup">Registrarse</a>
+        <a href="http://localhost/adventas/vistas/login.html " class="login">Ingresar</a>
+      </div>
+    </div>
+  </div>
+    <div>
+      <header>
+        <a href="index.html" class="logo">
+          <img src="img/logomc1.png" alt="Logo">
+      </a>
+        <nav>
+            <ul>
+                <li class="menu">
+                    <a href="#">Alimentos y Bebidas</a>
+                    <ul class="submenu">
+                        <li><a href="organicos.html">Orgánicos</a></li>
+                        <li><a href="sin-gluten.html">Sin Gluten</a></li>
+                        <li><a href="veganos.html">Veganos</a></li>
+                        <li><a href="superalimentos.html">Superalimentos</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">Cuidado Personal</a>
+                    <ul class="submenu">
+                        <li><a href="jabones-shampoos.html">Jabones y Shampoos</a></li>
+                        <li><a href="cremas-aceites.html">Cremas y Aceites</a></li>
+                        <li><a href="cosmetica-natural.html">Cosmética Natural</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="#">Limpieza del Hogar</a>
+                    <ul class="submenu">
+                        <li><a href="detergentes.html">Detergentes</a></li>
+                        <li><a href="utensilios-ecologicos.html">Utensilios Ecológicos</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                  <a href="#">Moda Sostenible</a>
+                  <ul class="submenu">
+                      <li><a href="ropa.html">Ropa</a></li>
+                      <li><a href="accesorios.html">Accesorios</a></li>
+                  </ul>
+              </li>
+
+              <li class="menu">
+                  <a href="#">Hogar y Decoración</a>
+                  <ul class="submenu">
+                      <li><a href="cocina.html">Cocina</a></li>
+                      <li><a href="textiles.html">Textiles</a></li>
+                      <li><a href="muebles-reciclados.html">Muebles Reciclados</a></li>
+                  </ul>
+              </li>
+
+              <li class="menu">
+                  <a href="#">Bienestar</a>
+                  <ul class="submenu">
+                      <li><a href="aromaterapia.html">Aromaterapia</a></li>
+                      <li><a href="yoga-meditacion.html">Yoga y Meditación</a></li>
+                  </ul>
+              </li>
+
+              <li class="menu">
+                  <a href="#">Huerta y Jardinería</a>
+                  <ul class="submenu">
+                      <li><a href="semillas.html">Semillas</a></li>
+                      <li><a href="kits-cultivo.html">Kits de Cultivo</a></li>
+                  </ul>
+              </li>
+
+              <li class="menu">
+                  <a href="#">Mascotas</a>
+                  <ul class="submenu">
+                      <li><a href="comida-natural.html">Comida Natural</a></li>
+                      <li><a href="juguetes-ecologicos.html">Juguetes Ecológicos</a></li>
+                  </ul>
+              </li>
+          
+            </ul>
+
+        </nav>
+    </header>
+    
+    <main>
+      <section class="section1">
+          <div class="bienvenidos">
+            <p class="parrafo1">✨ ¡Bienvenido a <strong>MercaColombiano</strong>! ✨</p>
+            <div class="contenedor">
+                <img src="images-flex/laprimera.png" alt="Plataforma de consumo responsable">
+                <div class="texto">
+                    <p>🌿 <strong>Compra con impacto.</strong> Conectamos pequeños productores y emprendedores con consumidores que buscan calidad, sostenibilidad y productos 100% naturales.</p>
+                    <p>🛍️ **Descubre nuestra tienda** y haz compras con propósito. Desde alimentos orgánicos hasta productos ecológicos para el hogar, todo en un solo lugar.</p>
+                </div>
+            </div>
+              </div>
+          </div>
+
+          <div class="photo-grid">
+              <div class="photo-grid-item"><a href="organicos.html" ><img src="images-flex/productos1.png" alt="Imagen de desarrollo"></a></div>
+              <div class="photo-grid-item"><a href="ropa.html"><img src="images-flex/vestuario.png" alt="Imagen fija"></a></div>
+              <div class="photo-grid-item"><a href="mascotas.html"><img src="images-flex/mascotas.png" alt="Imagen relativa"></a></div>
+          </div>
+
+          <div class="info">
+            <h1>🌱 Descubre productos ecológicos y sostenibles</h1>
+            <p>✅ Ingredientes naturales, sin químicos dañinos.</p>
+            <p>✅ Apoya el comercio justo y pequeñas empresas.</p>
+            <p>✅ Productos biodegradables y amigables con el planeta.</p>
+            <p>🛒 <strong>Haz tu compra ahora</strong> y sé parte del cambio. Tu elección contribuye a un mundo más sostenible. 💚</p>
+        </div>
+      </section>
+  </main>
+
+  <footer>
+    <h3>🚀 Únete al movimiento de consumo responsable</h3>
+    <p>💚 Sigue nuestras redes y recibe descuentos exclusivos.</p>
+    <ul>
+        <li><a href="#">📩 Contáctanos</a></li>
+        <li><a href="#">📸 Instagram</a></li>
+        <li><a href="#">🎥 TikTok</a></li>
+        <li><a href="#">💬 WhatsApp</a></li>
+    </ul>
+</footer>
+    <script src="script.js"></script>
+</body>
+ 
+</html>

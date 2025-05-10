@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MecarColombiano</title>
+        <link rel="stylesheet" href="stilos.css">
+        <link rel="stylesheet" href="compra.css">
+        <script src="compra.js"></script>
+        <script src="https://kit.fontawesome.com/29d0d31443.js" crossorigin="anonymous"></script>
+        
+        <title>Fecha y Hora del PC</title>
+      <script>
+        function mostrarFechaHora() {
+          var fechaHora = new Date();
+          var fecha = fechaHora.toLocaleDateString();
+          var hora = fechaHora.toLocaleTimeString();
+          
+          document.getElementById('fecha-hora').innerHTML = 'Fecha: ' + fecha + '<br>Hora: ' + hora;
+        }
+    
+        // Llama a la función para mostrar la fecha y hora al cargar la página
+        window.onload = function() {
+          mostrarFechaHora();
+        };
+      </script>
+      <script src="script.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    </head>
+    
+<body>
+<!-- en este div se muestra en login y la hora -->
+<div class="menu1-container">
+    <div class="menu1">
+      <div class="date"><div id="fecha-hora"></div></div>
+      <div class="links">
+        <a href="registro.html" class="signup">Registrarse</a>
+        <a href="http://localhost/adventas/vistas/login.html " class="login">Ingresar</a>
+      </div>
+    </div>
+  </div>
+    <!-- Encabezado -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="img/logomc1.png" alt="MercaColombiano">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="organicos.html">Orgánicos</a></li>
+                <li><a href="sin-gluten.html">Sin Gluten</a></li>
+                <li><a href="veganos.html">Veganos</a></li>
+                <li><a href="superalimentos.html">Superalimentos</a></li>
+                <li><a href="carrito.html" class="cart-link">🛒 Carrito (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Productos -->
+    <main>
+        <h1>🌿 Alimentos y Bebidas</h1>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images-flex/bolsa.png" alt="Bolsa Ecológica">
+                <h3>Bolsa Ecológica Reutilizable</h3>
+                <p>$15.000</p>
+                <button class="add-to-cart" data-name="Bolsa Ecológica" data-price="15">🛒 Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images-flex/productos2.png" alt="Botella de Bambú">
+                <h3>Botella de Bambú</h3>
+                <p>$25.000</p>
+                <button class="add-to-cart" data-name="Botella de Bambú" data-price="25">🛒 Agregar al carrito</button>
+            </div>
+            <div class="product">
+                <img src="images-flex/producto3.png" alt="Kit de Cubiertos">
+                <h3>Kit de Cubiertos de Madera</h3>
+                <p>$18.000</p>
+                <button class="add-to-cart" data-name="Kit de Cubiertos" data-price="18">🛒 Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h3>🚀 Únete al movimiento de consumo responsable</h3>
+        <p>💚 Sigue nuestras redes y recibe descuentos exclusivos.</p>
+        <ul>
+            <li><a href="#">📩 Contáctanos</a></li>
+            <li><a href="#">📸 Instagram</a></li>
+            <li><a href="#">🎥 TikTok</a></li>
+            <li><a href="#">💬 WhatsApp</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Web</title>
+    <link rel="stylesheet" href="stilos.css">
+    <script src="https://kit.fontawesome.com/29d0d31443.js" crossorigin="anonymous"></script>
+    
+    <title>Fecha y Hora del PC</title>
+  <script>
+    function mostrarFechaHora() {
+      var fechaHora = new Date();
+      var fecha = fechaHora.toLocaleDateString();
+      var hora = fechaHora.toLocaleTimeString();
+      
+      document.getElementById('fecha-hora').innerHTML = 'Fecha: ' + fecha + '<br>Hora: ' + hora;
+    }
+
+    // Llama a la función para mostrar la fecha y hora al cargar la página
+    window.onload = function() {
+      mostrarFechaHora();
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+  <div class="menu-container">
+    <div class="menu">
+      <div class="date"><div id="fecha-hora"></div></div>
+      <div class="links">
+        <div class="signup">Registrarse</div>
+        <div class="login">Log in</div>
+      </div>
+    </div>
+  </div>
+    <div>
+        <header>
+            <a href="index.html"><div class="logo"><img src="img/log.png" /></div></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Servicios</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+          <section class="section1">
+            <div class="photo-grid-container">
+              <div class="photo-grid">
+              
+            <div class="imagen1">
+              <img src="images-flex/ser.jpg" /> 
+          </div>
+              
+              <div class="texto"> 
+                
+                <h1 style="font-size: 3rem">Desarrollo Web</h1>
+                <p style="font-size: 2rem">
+                  ¡Potencia tu presencia online con un sitio web a medida! 
+                  Conseguirás una plataforma única, funcional y atractiva para impulsar tu negocio en el mundo digital.
+                </p>
+
+              </div>
+              <div class="texto">
+                <h1 style="font-size: 2rem">Historia y origen</h1>
+                <p style="font-size: 2rem">
+                  Breve historia sobre cómo y cuándo fue fundada la empresa.
+                  La visión original y cómo ha evolucionado a lo largo del tiempo.
+                  </p>
+              </div>
+                <div class="photo-grid-item">
+                  <img src="images-flex/fixed-01.jpg" />
+        
+                </div>
+                
+                <div class="photo-grid-item">
+                  <img src="images-flex/relative-01.jpg" />
+                </div>
+                <div class="texto">
+                  <h1 style="font-size: 2rem">Misión y valores</h1>
+                  <p style="font-size: 2rem">
+                    Declaración de la misión de la empresa en el campo del desarrollo web.
+                    Valores fundamentales que guían el trabajo diario y las interacciones con los clientes</p>
+                </div>
+              </div>
+          </div>
+          </section>
+          <section class="section2">
+
+          </section>
+            
+        </main>
+    </div>
+    <footer>
+        <h3>Redes Sociales</h3>
+        
+            <ul>
+                <li><a href="www.google.com" target="_blank">Contacto</a></li>
+                <li><a href="www.google.com" target="_blank">Instagran</a></li>
+                <li><a href="www.google.com" target="_blank">titok</a></li>
+                <li><a href="www.google.com" target="_blank">Whatsapp</a></li>
+            
+            </ul>
+        
+    </footer>
+</body>
+ 
+</html>

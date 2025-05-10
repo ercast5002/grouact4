@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mi Primera Web</title>
+        <link rel="stylesheet" href="stilos.css">
+        <script src="https://kit.fontawesome.com/29d0d31443.js" crossorigin="anonymous"></script>
+        
+        <title>Fecha y Hora del PC</title>
+      <script>
+        function mostrarFechaHora() {
+          var fechaHora = new Date();
+          var fecha = fechaHora.toLocaleDateString();
+          var hora = fechaHora.toLocaleTimeString();
+          
+          document.getElementById('fecha-hora').innerHTML = 'Fecha: ' + fecha + '<br>Hora: ' + hora;
+        }
+    
+        // Llama a la función para mostrar la fecha y hora al cargar la página
+        window.onload = function() {
+          mostrarFechaHora();
+        };
+      </script>
+      <script src="script.js"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+      
+      <div class="menu1-container">
+        <div class="menu1">
+          <div class="date"><div id="fecha-hora"></div></div>
+          <div class="links">
+            <a href="registro.html" class="signup">Registrarse</a>
+            <a href="http://localhost/adventas/vistas/login.html " class="login">Ingresar</a>
+          </div>
+        </div>
+      </div>
+        <div>
+          <header>
+            <a href="index.html" class="logo">
+              <img src="img/logomc1.png" alt="Logo">
+          </a>
+            <nav>
+                <ul>
+                    <li class="menu">
+                        <a href="#">Alimentos y Bebidas</a>
+                        <ul class="submenu">
+                            <li><a href="organicos.html">Orgánicos</a></li>
+                            <li><a href="sin-gluten.html">Sin Gluten</a></li>
+                            <li><a href="veganos.html">Veganos</a></li>
+                            <li><a href="superalimentos.html">Superalimentos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Cuidado Personal</a>
+                        <ul class="submenu">
+                            <li><a href="jabones-shampoos.html">Jabones y Shampoos</a></li>
+                            <li><a href="cremas-aceites.html">Cremas y Aceites</a></li>
+                            <li><a href="cosmetica-natural.html">Cosmética Natural</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">Limpieza del Hogar</a>
+                        <ul class="submenu">
+                            <li><a href="detergentes.html">Detergentes</a></li>
+                            <li><a href="utensilios-ecologicos.html">Utensilios Ecológicos</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                      <a href="#">Moda Sostenible</a>
+                      <ul class="submenu">
+                          <li><a href="ropa.html">Ropa</a></li>
+                          <li><a href="accesorios.html">Accesorios</a></li>
+                      </ul>
+                  </li>
+    
+                  <li class="menu">
+                      <a href="#">Hogar y Decoración</a>
+                      <ul class="submenu">
+                          <li><a href="cocina.html">Cocina</a></li>
+                          <li><a href="textiles.html">Textiles</a></li>
+                          <li><a href="muebles-reciclados.html">Muebles Reciclados</a></li>
+                      </ul>
+                  </li>
+    
+                  <li class="menu">
+                      <a href="#">Bienestar</a>
+                      <ul class="submenu">
+                          <li><a href="aromaterapia.html">Aromaterapia</a></li>
+                          <li><a href="yoga-meditacion.html">Yoga y Meditación</a></li>
+                      </ul>
+                  </li>
+    
+                  <li class="menu">
+                      <a href="#">Huerta y Jardinería</a>
+                      <ul class="submenu">
+                          <li><a href="semillas.html">Semillas</a></li>
+                          <li><a href="kits-cultivo.html">Kits de Cultivo</a></li>
+                      </ul>
+                  </li>
+    
+                  <li class="menu">
+                      <a href="#">Mascotas</a>
+                      <ul class="submenu">
+                          <li><a href="comida-natural.html">Comida Natural</a></li>
+                          <li><a href="juguetes-ecologicos.html">Juguetes Ecológicos</a></li>
+                      </ul>
+                  </li>
+              
+                </ul>
+    
+            </nav>
+        </header>
+<body>
+
+    <div class="containerRegistro">
+        <div class="form-box">
+            <h2>Registrarse</h2>
+            <form action="registro.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit" class="btn">Registrarse</button>
+            </form>
+        </div>
+
+        <div class="form-box">
+            <a href="http://localhost/adventas/vistas/login.html">
+                <button type="button" class="btn">Iniciar Sesión</button>
+            </a>
+        </div>
+        
+    </div>
+
+</body>
+</html>

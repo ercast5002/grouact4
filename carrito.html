@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="stylesheet" href="compra.css">
+    <script src="compra.js" defer></script>
+</head>
+<body>
+
+    <div class="cart-container">
+        <h2>🛒 Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <h3 id="total">Total: $0.00</h3>
+        <button class="checkout-btn" onclick="finalizarCompra()">✅ Finalizar Compra</button>
+    </div>
+
+    <script>
+        function finalizarCompra() {
+            alert("Gracias por tu compra! 🛍️ Los detalles de tu pedido serán enviados a tu correo.");
+            localStorage.removeItem("cart");
+            location.reload();
+        }
+    </script>
+
+</body>
+</html>
